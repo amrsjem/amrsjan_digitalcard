@@ -1,0 +1,6 @@
+{
+  "name": "Janna Amores - BYD Marikina Digital NFC Card",
+  "description": "Digital NFC business card and vehicle inquiry portal for Janna Amores, BYD Sales Agent at BYD Marikina.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

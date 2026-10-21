@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0B0D;
+    color: #202124;
+    overflow-x: hidden;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  /* Prevent automatic iOS input zoom by ensuring minimum 16px on mobile */
+  input, select, textarea {
+    font-size: 16px;
+  }
+  @media (min-width: 640px) {
+    input, select, textarea {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+/* Subtle glow and automotive accent styles */
+.byd-red-glow {
+  box-shadow: 0 0 25px -5px rgba(230, 0, 18, 0.35);
+}
+
+.byd-card-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 0.75rem);
+}
+
+/* Hide scrollbars for clean horizontal scrollers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
